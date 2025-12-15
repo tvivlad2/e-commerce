@@ -1,0 +1,68 @@
+.banner {
+  position: relative; 
+  display: flex;
+  background: #000;
+  color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banner-content h1 {
+  font-size: 36px;
+  margin: 16px 0;
+}
+
+.banner-content span {
+  color: #fff;
+}
+
+
+.banner-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.banner-brand img {
+  width: 18px;
+  height: 18px;
+}
+
+.banner-dots {
+  position: absolute;
+  bottom: 20px;            
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #555;
+}
+
+.dot.active {
+  background: red;
+  border: 1px solid #fff;
+}
+
+
+.cta {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.banner-image img {
+  max-width: 300px;
+
+}
