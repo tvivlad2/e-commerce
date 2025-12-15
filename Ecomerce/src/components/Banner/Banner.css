@@ -1,4 +1,5 @@
 .banner {
+  position: relative; 
   display: flex;
   background: #000;
   color: #fff;
@@ -14,8 +15,9 @@
 }
 
 .banner-content span {
-  color: #7c3aed;
+  color: #fff;
 }
+
 
 .banner-brand {
   display: flex;
@@ -31,9 +33,12 @@
 }
 
 .banner-dots {
+  position: absolute;
+  bottom: 20px;            
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   gap: 8px;
-  margin-top: 24px;
 }
 
 .dot {
@@ -44,7 +49,8 @@
 }
 
 .dot.active {
-  background: #fff;
+  background: red;
+  border: 1px solid #fff;
 }
 
 

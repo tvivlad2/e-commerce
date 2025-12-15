@@ -25,6 +25,7 @@ const Banner = () => {
         <img src={iphoneImg} alt="iPhone 14"  />
       </div>
 
+    
       <div className="banner-dots">
         <span className="dot"></span>
         <span className="dot active"></span>
