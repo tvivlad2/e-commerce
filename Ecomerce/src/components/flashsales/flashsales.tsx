@@ -1,4 +1,5 @@
 import React from 'react'
+import "./flashsales.css"
 
 const FlashSales = () => {
   return (
