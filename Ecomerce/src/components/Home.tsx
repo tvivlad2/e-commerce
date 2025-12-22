@@ -17,6 +17,22 @@ const Home = () => {
       </div>
     </>
   );
+import FlashSales from "./flashsales/flashsales";
+
+const Home = () => {
+  return (
+    <>
+    <div style={{ display: "flex", gap: "24px" }}>
+      <Sidebar />
+      <Banner />
+      
+
+    </div>
+    <div>
+      <FlashSales/>
+    </div>
+    </>
+  )
 }
 
 export default Home
