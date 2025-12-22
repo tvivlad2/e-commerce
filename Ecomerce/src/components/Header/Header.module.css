@@ -1,0 +1,15 @@
+.topHeader {
+background: #000;
+color: #fff;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 8px 40px;
+font-size: 14px;
+
+
+
+.topHeader span {
+text-decoration: underline;
+cursor: pointer;
+}
