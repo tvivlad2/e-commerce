@@ -1,4 +1,5 @@
 import styles from "./Footer.module.css";
+import Frame from "../../assets/Frame.png";
 
 const Footer = () => {
   return (
@@ -33,6 +34,12 @@ const Footer = () => {
           <p>Terms Of Use</p>
           <p>FAQ</p>
           <p>Contact</p>
+        </div>
+        <div>
+          <img src={Frame} alt="frame" />
+          <div>
+            
+          </div>
         </div>
       </div>
 
