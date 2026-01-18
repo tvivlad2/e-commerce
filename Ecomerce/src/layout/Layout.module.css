@@ -1,0 +1,89 @@
+.app{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+}
+
+.header{
+  background:#fff;
+}
+
+.topBar{
+  background: var(--black);
+  color: var(--white);
+  padding: 10px 16px;
+  margin-top: 12px;
+  display:flex;
+  align-items:center;
+  gap: 10px;
+  border-radius: 2px;
+}
+
+.shopNow{
+  color: var(--white);
+  text-decoration: underline;
+  margin-left: 6px;
+}
+
+.lang{
+  margin-left:auto;
+  background: transparent;
+  color: var(--white);
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 4px;
+  padding: 6px 8px;
+}
+
+.headerMain{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap: 24px;
+  padding: 18px 0;
+}
+
+.logo{
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.nav{
+  display:flex;
+  gap: 18px;
+  font-size: 14px;
+}
+
+.searchWrap{
+  display:flex;
+  align-items:center;
+  gap: 12px;
+}
+
+.search{
+  width: 280px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 10px 12px;
+  outline:none;
+}
+
+.icons{
+  display:flex;
+  gap: 10px;
+  font-size: 18px;
+}
+
+.divider{
+  border-top: 1px solid var(--border);
+}
+
+.footer{
+  margin-top:auto;
+  background: var(--black);
+  color: var(--white);
+  padding: 48px 0;
+}
+
+.footerBox{
+  padding: 16px 0;
+}

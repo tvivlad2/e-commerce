@@ -1,0 +1,17 @@
+/* ================================
+   App-level styles (Drop-in replacement)
+   Removes Vite demo constraints
+   ================================ */
+
+#root {
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Optional: page wrapper helper if you use it */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
