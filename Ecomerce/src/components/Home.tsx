@@ -1,7 +1,7 @@
 import Sidebar from "../components/Sidebar/Sidebar";
 import Banner from "../components/Banner/Banner";
 import Header from "../components/Header/Header";
-import Footer from "../components/Footer/Footer";
+import Footer from "./Footer";
 const Home = () => {
   return (
     <>
@@ -34,9 +34,4 @@ const Home = () => {
     </>
   )
 }
-
 export default Home
-
-
-
-
