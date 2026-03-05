@@ -1,0 +1,28 @@
+.sidebar {
+  width: 240px;
+  border-right: 1px solid #eee;
+  padding: 16px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.sidebar li:hover {
+  color: #7c3aed; 
+}
+
+.arrow {
+  font-size: 16px;
+  color: #999;
+}

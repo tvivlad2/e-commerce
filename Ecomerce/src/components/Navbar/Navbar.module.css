@@ -1,0 +1,39 @@
+
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 40px;
+border-bottom: 1px solid #eee;
+}
+
+
+.logo {
+font-weight: bold;
+}
+
+
+.navLinks {
+display: flex;
+gap: 30px;
+list-style: none;
+}
+
+
+.navActions {
+display: flex;
+gap: 15px;
+align-items: center;
+}
+
+
+.navActions input {
+padding: 8px;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+
+
+.icon {
+cursor: pointer;
+}
