@@ -1,0 +1,58 @@
+.section {
+  padding: 28px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.headerRow {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.kicker {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #db4444;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.kickerBar {
+  width: 14px;
+  height: 32px;
+  background: #db4444;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.heading {
+  margin: 10px 0 0;
+  font-size: 32px;
+  font-weight: 700;
+  color: #111;
+}
+
+.arrows {
+  display: flex;
+  gap: 10px;
+}
+
+.circleBtn {
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  border: 1px solid #eee;
+  background: #f5f5f5;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.grid {
+  margin-top: 18px;
+  display: flex;
+  gap: 18px;
+  overflow-x: auto;
+  padding-bottom: 6px;
+}

@@ -1,0 +1,76 @@
+.banner {
+  flex: 1;
+  height: 340px;
+  background: #000;
+  color: #fff;
+  border-radius: 2px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px;
+  gap: 24px;
+}
+
+.left {
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  opacity: 0.95;
+}
+
+.brand img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.title {
+  font-size: 44px;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.title span {
+  font-weight: 700;
+}
+
+.cta {
+  width: fit-content;
+  background: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+  font-size: 16px;
+}
+
+.right img {
+  height: 280px;
+  object-fit: contain;
+}
+
+.dots {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.active {
+  background: #db4444;
+}
