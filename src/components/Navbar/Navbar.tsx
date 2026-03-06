@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { NavLink, Link } from "react-router-dom";
 import styles from "./Navbar.module.css";
 
 const Navbar = () => {
@@ -8,16 +9,55 @@ const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.container}>
-        <h2 className={styles.logo}>Exclusive</h2>
+        <Link to="/" className={styles.logoLink}>
+          <h2 className={styles.logo}>Exclusive</h2>
+        </Link>
 
         <ul className={styles.navLinks}>
-          <li>Home</li>
-          <li>Contact</li>
-          <li>About</li>
+          <li>
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive ? `${styles.navItem} ${styles.active}` : styles.navItem
+              }
+            >
+              Home
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink
+              to="/contact"
+              className={({ isActive }) =>
+                isActive ? `${styles.navItem} ${styles.active}` : styles.navItem
+              }
+            >
+              Contact
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink
+              to="/about"
+              className={({ isActive }) =>
+                isActive ? `${styles.navItem} ${styles.active}` : styles.navItem
+              }
+            >
+              About
+            </NavLink>
+          </li>
 
           {!isLoggedIn ? (
-            <li className={styles.clickable} onClick={() => setIsLoggedIn(true)}>
-              Sign Up
+            <li>
+              <NavLink
+                to="/signup"
+                className={({ isActive }) =>
+                  isActive ? `${styles.navItem} ${styles.active}` : styles.navItem
+                }
+                onClick={() => setIsLoggedIn(true)}
+              >
+                Sign Up
+              </NavLink>
             </li>
           ) : (
             <li className={styles.accountWrap}>
@@ -31,19 +71,22 @@ const Navbar = () => {
 
               {openAccountMenu && (
                 <div className={styles.accountMenu}>
-                  <div className={styles.menuItem}>Manage my account</div>
+                  <NavLink to="/account" className={styles.menuItem}>
+                    Manage my account
+                  </NavLink>
                   <div className={styles.menuItem}>My Orders</div>
                   <div className={styles.menuItem}>My Cancellations</div>
                   <div className={styles.menuItem}>My Reviews</div>
-                  <div
-                    className={`${styles.menuItem} ${styles.logout}`}
+                  <button
+                    type="button"
+                    className={`${styles.menuItem} ${styles.logoutBtn}`}
                     onClick={() => {
                       setIsLoggedIn(false);
                       setOpenAccountMenu(false);
                     }}
                   >
                     Logout
-                  </div>
+                  </button>
                 </div>
               )}
             </li>
@@ -60,8 +103,12 @@ const Navbar = () => {
             <span className={styles.searchIcon}>⌕</span>
           </div>
 
-          <span className={styles.icon}>♡</span>
-          <span className={styles.icon}>🛒</span>
+          <NavLink to="/wishlist" className={styles.iconLink}>
+            ♡
+          </NavLink>
+          <NavLink to="/cart" className={styles.iconLink}>
+            🛒
+          </NavLink>
         </div>
       </div>
     </nav>

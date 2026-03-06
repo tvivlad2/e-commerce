@@ -35,3 +35,8 @@
   outline: none;
   cursor: pointer;
 }
+
+.languageSelect option {
+  color: #111;
+  background: #fff;
+}

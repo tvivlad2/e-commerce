@@ -14,9 +14,16 @@
   gap: 24px;
 }
 
+.logoLink {
+  text-decoration: none;
+  color: inherit;
+}
+
 .logo {
   margin: 0;
   font-weight: 700;
+  font-size: 24px;
+  color: #111;
 }
 
 .navLinks {
@@ -26,10 +33,17 @@
   margin: 0;
   padding: 0;
   color: #111;
+  align-items: center;
 }
 
-.clickable {
-  cursor: pointer;
+.navItem {
+  text-decoration: none;
+  color: #111;
+  padding-bottom: 3px;
+}
+
+.active {
+  border-bottom: 1px solid #111;
 }
 
 .navActions {
@@ -49,6 +63,11 @@
   border-radius: 4px;
   outline: none;
   background: #f5f5f5;
+  color: #111;
+}
+
+.searchInput::placeholder {
+  color: #777;
 }
 
 .searchIcon {
@@ -57,10 +76,12 @@
   top: 50%;
   transform: translateY(-50%);
   opacity: 0.7;
+  color: #111;
 }
 
-.icon {
-  cursor: pointer;
+.iconLink {
+  text-decoration: none;
+  color: #111;
   font-size: 18px;
 }
 
@@ -73,6 +94,7 @@
   border: none;
   cursor: pointer;
   font: inherit;
+  color: #111;
 }
 
 .accountMenu {
@@ -89,15 +111,23 @@
 }
 
 .menuItem {
+  display: block;
+  width: 100%;
   padding: 10px 10px;
   cursor: pointer;
   border-radius: 6px;
+  text-decoration: none;
+  color: #111;
+  background: transparent;
+  border: none;
+  text-align: left;
+  font: inherit;
 }
 
 .menuItem:hover {
   background: #f5f5f5;
 }
 
-.logout {
+.logoutBtn {
   color: #db4444;
 }

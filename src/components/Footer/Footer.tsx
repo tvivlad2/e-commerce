@@ -1,14 +1,17 @@
 import styles from "./Footer.module.css";
 import Frame from "../../assets/Frame.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.inner}>
         <div className={styles.grid}>
-          {/* Column 1 */}
           <div className={styles.col}>
-            <h3 className={styles.brand}>Exclusive</h3>
+            <Link to="/" className={styles.brandLink}>
+              <h3 className={styles.brand}>Exclusive</h3>
+            </Link>
+
             <p className={styles.subtitle}>Subscribe</p>
             <p className={styles.muted}>Get 10% off your first order</p>
 
@@ -24,34 +27,30 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Column 2 */}
           <div className={styles.col}>
             <h4 className={styles.title}>Support</h4>
-            <p className={styles.link}>111 Bijoy sarani, Dhaka, Bangladesh</p>
-            <p className={styles.link}>exclusive@gmail.com</p>
-            <p className={styles.link}>+88015-88888-9999</p>
+            <p className={styles.linkText}>111 Bijoy sarani, Dhaka, Bangladesh</p>
+            <p className={styles.linkText}>exclusive@gmail.com</p>
+            <p className={styles.linkText}>+88015-88888-9999</p>
           </div>
 
-          {/* Column 3 */}
           <div className={styles.col}>
             <h4 className={styles.title}>Account</h4>
-            <p className={styles.link}>My Account</p>
-            <p className={styles.link}>Login / Register</p>
-            <p className={styles.link}>Cart</p>
-            <p className={styles.link}>Wishlist</p>
-            <p className={styles.link}>Shop</p>
+            <Link to="/account" className={styles.link}>My Account</Link>
+            <Link to="/login" className={styles.link}>Login / Register</Link>
+            <Link to="/cart" className={styles.link}>Cart</Link>
+            <Link to="/wishlist" className={styles.link}>Wishlist</Link>
+            <Link to="/" className={styles.link}>Shop</Link>
           </div>
 
-          {/* Column 4 */}
           <div className={styles.col}>
             <h4 className={styles.title}>Quick Link</h4>
-            <p className={styles.link}>Privacy Policy</p>
-            <p className={styles.link}>Terms Of Use</p>
-            <p className={styles.link}>FAQ</p>
-            <p className={styles.link}>Contact</p>
+            <Link to="/about" className={styles.link}>Privacy Policy</Link>
+            <Link to="/about" className={styles.link}>Terms Of Use</Link>
+            <Link to="/contact" className={styles.link}>FAQ</Link>
+            <Link to="/contact" className={styles.link}>Contact</Link>
           </div>
 
-          {/* Column 5 */}
           <div className={styles.col}>
             <h4 className={styles.title}>Download App</h4>
             <p className={styles.mutedSmall}>Save $3 with App New User Only</p>
@@ -65,18 +64,10 @@ const Footer = () => {
             </div>
 
             <div className={styles.socialRow}>
-              <a className={styles.social} href="#" aria-label="Facebook">
-                f
-              </a>
-              <a className={styles.social} href="#" aria-label="Twitter">
-                t
-              </a>
-              <a className={styles.social} href="#" aria-label="Instagram">
-                ⦿
-              </a>
-              <a className={styles.social} href="#" aria-label="LinkedIn">
-                in
-              </a>
+              <a className={styles.social} href="#" aria-label="Facebook">f</a>
+              <a className={styles.social} href="#" aria-label="Twitter">t</a>
+              <a className={styles.social} href="#" aria-label="Instagram">⦿</a>
+              <a className={styles.social} href="#" aria-label="LinkedIn">in</a>
             </div>
           </div>
         </div>
