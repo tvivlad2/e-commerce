@@ -3,10 +3,10 @@ import styles from "../components/about/AboutPage.module.css";
 import StatsCard from "../components/about/StatsCard";
 import TeamCard from "../components/about/TeamCard";
 import ServiceItem from "../components/about/ServiceItem";
-import About1 from "../About1.png";
-import About2 from "../About2.png";
-import About3 from "../About3.png";
-import About4 from "../About4.png";
+import About1 from "../assets/About1.png";
+import About2 from "../assets/About2.png";
+import About3 from "../assets/About3.png";
+import About4 from "../assets/About4.png";
 
 
 const AboutPage: React.FC = () => {

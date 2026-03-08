@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.form {
+  flex: 1;
+  padding: 80px;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.actions button {
+  padding: 10px 20px;
+  background: #db4444;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.actions span {
+  color: #db4444;
+  cursor: pointer;
+}
+
+.signup {
+  margin-top: 20px;
+}
+
+.signup span {
+  color: #db4444;
+  cursor: pointer;
+}
