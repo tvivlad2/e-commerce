@@ -1,15 +1,23 @@
- 
+import React from "react";
+import styles from "../components/account/AccountPage.module.css";
+import AccountSidebar from "../components/account/AccountSidebar";
+import ProfileForm from "../components/account/ProfileForm";
 
-const AccountPage = () => {
+const AccountPage: React.FC = () => {
   return (
-    <>
-       
-      <main style={{ maxWidth: "1200px", margin: "0 auto", padding: "40px 16px" }}>
-        <h1>My Account</h1>
-        <p>Account page coming soon.</p>
-      </main>
-       
-    </>
+    <div className={styles.container}>
+      <div className={styles.top}>
+        <span>Home / My Account</span>
+        <span>
+          Welcome! <b>Md Rimel</b>
+        </span>
+      </div>
+
+      <div className={styles.content}>
+        <AccountSidebar />
+        <ProfileForm />
+      </div>
+    </div>
   );
 };
 
