@@ -1,0 +1,9 @@
+.service {
+  text-align: center;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
