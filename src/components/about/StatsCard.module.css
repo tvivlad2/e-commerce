@@ -1,0 +1,23 @@
+.card {
+  background: white;
+  padding: 30px 20px;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.highlight {
+  background: #e53935;
+  color: white;
+}
+
+.icon {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
