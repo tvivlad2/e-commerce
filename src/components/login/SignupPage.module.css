@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.form {
+  flex: 1;
+  padding: 80px;
+}
+
+.primaryBtn {
+  width: 100%;
+  padding: 10px;
+  background: #db4444;
+  color: white;
+  border: none;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.googleBtn {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+}
+
+.loginText {
+  margin-top: 20px;
+}
+
+.loginText span {
+  color: #db4444;
+  cursor: pointer;
+}
