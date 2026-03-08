@@ -1,0 +1,17 @@
+.container {
+  padding: 60px 80px;
+  background: #f5f5f5;
+  min-height: 100vh;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  color: #777;
+}
+
+.content {
+  display: flex;
+  gap: 40px;
+}
